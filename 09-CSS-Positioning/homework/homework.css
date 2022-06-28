@@ -59,5 +59,26 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Ejercicio 6. */
 #ejericioSeis {
     display: flex;
+}
+
+#ejercicioSiete {
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+#elementoUno {
+    align-self:  flex-end;
     
+}
+
+#elementoDos {
+    align-self:  flex-end;
+    position: relative;
+    bottom: 100px;
+    
+}
+
+#elementoTres {
+    position: relative;
+    top: 100px;
 }
