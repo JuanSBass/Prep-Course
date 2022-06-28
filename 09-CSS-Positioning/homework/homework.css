@@ -54,15 +54,9 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 }
 
+/* A continuación podemos visualizar grid y flex con elementos posicionados en modo de escalera */
 
-
-/* Ejercicio 6. */
-#ejericioSeis {
-    display: flex;
-}
-
-#ejercicioSiete {
-    /* flex-wrap: wrap; */
+/* #ejercicioSiete {
     justify-content: space-between;
 }
 
@@ -81,4 +75,34 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 #elementoTres {
     position: relative;
     top: 100px;
+} */
+
+/* Para moverse en el eje x.. modificariamos los valores de la celda en grid-column
+    Para moverse en el eje y.. modificariamos los valores de la celda en grid-row */
+
+#ejercicioSiete {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+#elementoUno {
+    grid-row-start: 4;
+    
+    
+}
+
+#elementoDos {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    justify-items: center;
+}
+
+#elementoTres{
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+#elementoCuatro{
+    grid-column-end: 5;
 }
