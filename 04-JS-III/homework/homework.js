@@ -60,16 +60,17 @@ function dePalabrasAFrase(palabras) {
   // Tu código:
   var frase = "";
   for (var i = 0; i < palabras.length; i++) {
-    if (palabras[i] === palabras[palabras.length-1]) {
-    frase = frase + palabras[i];
+    // if (palabras[i] === palabras[palabras.length-1]) {
+    frase = frase + palabras[i] + " ";
   }
-  else {
-  frase = frase + palabras[i] + " ";
+  return frase.trim()
+  // else {
+  // frase = frase + palabras[i] + " ";
   }
-}
+// }
 
-return frase;
-}
+// return palabras.join(" ")
+// }
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
